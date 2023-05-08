@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="web_author" content="https://www.geekboots.com">
+    <title>Fast Food Restaurants</title>
+    <link href="https://fonts.googleapis.com/css?family=Catamaran|Dancing+Script" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" media="all" href="assets/css/style.css" />
+  </head>
+  <body id="home">
+    <header>
+      <div class="wrapper">
+        <a href="#" id="logo"><span></span>Fast Food Restaurant</a>
+        <a id="menu"></a>
+        <nav>
+          <a href="#home">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#popular-dishes">Popular Dishes</a>
+          <a href="#contact-us">Contact Us</a>
+        </nav>
+        <div class="clear"></div>
+      </div>
+    </header>
+    <section id="banner">
+      <h2>Welcome to Fast Food Restaurant</h2>
+    </section>
+    <section id="about" class="contentBg">
+      <div class="wrapper">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </section>
+    <section id="quoteBanner">
+        <h2>We're More of a Family Style Restaurant</h2>
+    </section>
+    <section id="popular-dishes" class="contentBg">
+      <div class="wrapper">
+        <h2>Popular Dishes</h2>
+        <aside class="foodTab">
+          <img src="assets/images/food1.png" alt="food" />
+          <h3>Chicken Banjara</h3>
+        </aside>
+        <aside class="foodTab">
+          <img src="assets/images/food2.png" alt="food" />
+          <h3>Tandoori Chicken</h3>
+        </aside>
+        <aside class="foodTab">
+          <img src="assets/images/food3.png" alt="food" />
+          <h3>Fish Kabab</h3>
+        </aside>
+        <div class="clear"></div>
+      </div>
+    </section>
+    <section id="quoteBanner2">
+      <div class="wrapper">
+        <h2>"Laughter is brighterst,<br />Where food is best."</h2>
+      </div>
+    </section>
+    <section id="contact-us" class="contentBg">
+      <div class="wrapper">
+        <h2>Contact Us</h2>
+        <address>
+          <h3>We offer home delivery</h3>
+          <p><strong>E-mail:</strong> info@yourdomain.com</p>
+          <p><strong>Phone:</strong> +1-456-874-5445</p>
+        </address>
+        <aside>
+          <h3>Place Your Order</h3>
+          <form method="post">
+            <input type="text" name="name" required placeholder="Your Name *" />
+            <input type="email" name="email" required placeholder="E-mail *" />
+            <input type="tel" name="ph" required placeholder="Phone No *" />
+            <textarea name="oderDetail" placeholder="Oder Details"></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </aside>
+        <div class="clear"></div>
+      </div>
+    </section>
+    <footer>
+      <div class="wrapper">
+        &copy; Copyright - All Rights Reserved
+        <nav>
+          <a href="#" id="facebook"></a>
+          <a href="#" id="twitter"></a>
+          <a href="#" id="google-plus"></a>
+          <a href="#" id="instagram"></a>
+        </nav>
+        <div class="clear"></div>
+      </div>
+    </footer>
+    <script
+			  src="https://code.jquery.com/jquery-1.12.4.min.js"
+			  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+			  crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+      $(window).load(function () {
+        $("a#menu").on('click', function () {
+          $('header nav').slideToggle('slow');
+        });
+
+        $(document).on('click', 'a', function(event){
+          if ($.attr(this, 'href') == "#home" || $.attr(this, 'href') == "#about" || $.attr(this, 'href') == "#services" || $.attr(this, 'href') == "#popular-dishes" || $.attr(this, 'href') == "#contact-us") {
+           event.preventDefault();
+
+           $('html, body').animate({
+               scrollTop: $( $.attr(this, 'href') ).offset().top - 30
+           }, 500);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

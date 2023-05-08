@@ -1,0 +1,359 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Catamaran', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  background-color: #f2f2f2;
+}
+
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.clear { clear: both; }
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 15px 0;
+  background-color: #2d2d2d;
+}
+
+header a#logo {
+  float: left;
+  font-family: 'Dancing Script', cursive;
+  font-size: 35px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+header a#logo span {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 50px;
+  height: 50px;
+  margin-right: 8px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../images/Restaurant.svg');
+  background-size: cover;
+}
+
+header a#menu {
+  display: none;
+  float: right;
+  cursor: pointer;
+  margin-top: 5px;
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../images/menu.svg');
+}
+
+header nav {
+  float: right;
+  margin-top: 13px;
+}
+
+header nav a {
+  margin-left: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+  transition: 0.3s linear all;
+}
+
+header nav a:hover, header nav a.active {
+  color: #f35f2a;
+}
+
+section#banner {
+  width: 100%;
+  padding: 250px 0;
+  margin-top: 80px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url('../images/banner.jpeg');
+}
+
+section#banner h2 {
+  text-align: center;
+  font-size: 60px;
+  font-weight: normal;
+  color: #ffffff;
+  text-shadow: 0 0 5px #111111;
+  font-family: 'Dancing Script', cursive;
+}
+
+section.contentBg {
+  text-align: center;
+  padding: 80px 0;
+}
+
+section.contentBg h2 {
+  font-weight: normal;
+  font-size: 35px;
+  margin-bottom: 20px;
+  font-family: 'Dancing Script', cursive;
+}
+
+section.contentBg p {
+  text-align: justify;
+  margin: 15px 0;
+}
+
+section#quoteBanner {
+  background-color: #f35f2a;
+  width: 100%;
+  padding: 100px 0;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-image: url('../images/my-dishes.png');
+}
+
+section#quoteBanner h2 {
+  color: #ffffff;
+  margin-left: 5%;
+  font-weight: normal;
+  font-size: 38px;
+  font-family: 'Dancing Script', cursive;
+}
+
+section#quoteBanner2 {
+  background-color: #2d2d2d;
+  width: 100%;
+  padding: 110px 0;
+  background-position: 20% 50%;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-image: url('../images/best-dish.png');
+}
+
+section#quoteBanner2 h2 {
+  text-align: right;
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 38px;
+  font-family: 'Dancing Script', cursive;
+}
+
+aside.foodTab {
+  display: inline-block;
+  vertical-align: top;
+  width: 280px;
+  margin: 0 20px;
+}
+
+aside.foodTab img {
+  width: 100%;
+}
+
+aside.foodTab h3 {
+  font-weight: normal;
+  font-size: 24px;
+  font-family: 'Dancing Script', cursive;
+}
+
+section#contact-us address {
+  display: inline-block;
+  vertical-align: top;
+  width: 350px;
+  text-align: left;
+  font-style: normal;
+}
+
+section#contact-us aside {
+  display: inline-block;
+  vertical-align: top;
+  width: 500px;
+  text-align: left;
+}
+
+input[type=text], input[type=email], input[type=tel], textarea {
+  font-size: 15px;
+  width: 95%;
+  margin: 5px 0;
+  padding: 3px 10px;
+  border: #f35f2a solid 1px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-color: transparent;
+}
+
+button[type=submit] {
+  background-color: #f35f2a;
+  border: none;
+  font-size: 15px;
+  padding: 5px 25px 3px 25px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+textarea { resize: vertical; }
+
+footer {
+  color: #ffffff;
+  font-size: 12px;
+  background-color: #2d2d2d;
+  padding: 15px 0;
+}
+
+footer nav {
+  float: right;
+}
+
+footer nav a {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer nav a#facebook { background-image: url('../images/facebook.svg'); }
+
+footer nav a#twitter { background-image: url('../images/twitter.svg'); }
+
+footer nav a#google-plus { background-image: url('../images/google-plus.svg'); }
+
+footer nav a#instagram { background-image: url('../images/instagram.svg'); }
+
+@media screen
+  and (min-width: 800px)
+  and (max-width: 1080px) {
+    .wrapper {
+      width: 750px;
+    }
+
+    header nav { margin-top: 16px; }
+
+    aside.foodTab {
+      width: 220px;
+      margin: 0 10px;
+    }
+
+    section#contact-us aside {
+      width: 380px;
+    }
+}
+
+@media screen
+  and (min-width: 550px)
+  and (max-width: 800px) {
+    .wrapper {
+      width: 500px;
+    }
+
+    header a#menu {
+      display: block;
+    }
+
+    header nav { display: none; }
+
+    section#banner h2 { font-size: 50px; }
+
+    section#quoteBanner { background-size: 45%; padding: 50px 0; }
+
+    section#quoteBanner h2 { font-size: 30px; max-width: 300px; }
+
+    section#quoteBanner2 {
+      padding: 50px 0;
+      background-size: 45%;
+      background-position: 8% 50%;
+    }
+
+    section#quoteBanner2 h2 { font-size: 30px; }
+
+    aside.foodTab { margin: 10px 0; }
+
+    section#contact-us aside, section#contact-us address {
+      width: 100%;
+      margin: 20px 0;
+    }
+}
+
+@media screen
+  and (min-width: 320px)
+  and (max-width: 550px) {
+    .wrapper {
+      width: 95%;
+    }
+
+    header a#logo { font-size: 25px; }
+
+    header a#logo span {
+      width: 40px;
+      height: 40px;
+    }
+
+    header a#menu {
+      display: block;
+      width: 30px;
+      height: 30px;
+      margin-top: 10px;
+    }
+
+    header nav { display: none; }
+
+    header nav a {
+      display: inline-block;
+      margin: 0;
+      padding: 10px 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    section#banner {
+      padding: 150px 0;
+      margin-top: 60px;
+      background-attachment: scroll;
+    }
+
+    aside.foodTab { margin: 10px 0; width: 100%; }
+
+    section#quoteBanner {
+      background-size: 65%;
+      background-position: 98% 98%;
+      padding: 20px 0 80px 0;
+    }
+
+    section#quoteBanner2 {
+      background-size: 50%;
+      background-position: 2% 35%;
+      padding: 20px 0;
+    }
+
+    section#contact-us aside, section#contact-us address {
+      width: 95%;
+      margin: 20px 0;
+    }
+
+    footer { text-align: center; }
+
+    footer nav {
+      float: none;
+      display: inline-block;
+      margin-top: 10px;
+    }
+}
